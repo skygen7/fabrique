@@ -14,10 +14,9 @@
 
 Run:
 1. Install packages: $ pip install -r requirements.txt
-2. Make migrations: $ python manage.py makemigrations
-3. Migrate: $ python manage.py migrate
-4. Admin: $ python manage.py createsuperuser
-5. Run: $ python manage.py runserver
+2. Migrate: $ python manage.py migrate
+3. Admin: $ python manage.py createsuperuser
+4. Run: $ python manage.py runserver
 
 Нюансы:
 Выбор типа вопроса следующий (задавать эти название в поле type):

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <p>Введите имя (или оставьте поле пустым, если желаете проходить опрос анонимно):</p>
+    <form action="/user/" method="post">
+    {% csrf_token %}
+    {{ form }} <br><br>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>

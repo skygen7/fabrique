@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls</title>
+</head>
+<body>
+    {% for row in polls %}
+        <p><a href="/polls/{{ row.id }}">{{ row.name }}</a></p>
+    {% endfor %}
+    <a href="/user/{{ person_id }}">Личный кабинет</a>
+</body>
+</html>

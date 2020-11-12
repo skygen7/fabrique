@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}</title>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    <p>Дата начала опроса: {{ start_time }}</p>
+    <p>Дата окончания опроса: {{ end_time }}</p>
+    <p>Описание:<br>
+        {{ description }}
+    </p>
+    <form action="/polls/{{ id }}/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Пройти опрос" />
+    </form>
+    <a href="/polls">К списку опросов</a>
+</body>
+</html>

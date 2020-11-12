@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ id }}</title>
+</head>
+<body>
+    <h1>Вопрос №{{ id }}</h1>
+    <form action="/polls/{{ poll }}/questions/{{ id }}" method="post">
+        {% csrf_token %}
+       <p><b>{{ question.title }}</b></p>
+        {{ form|safe }}
+        <p><input type="submit" value="Выбрать"></p>
+      </form>
+</body>
+</html>

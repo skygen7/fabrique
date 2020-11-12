@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список вопросов</title>
+</head>
+<body>
+    {% for num, row in zip_data %}
+        <p><a href="{{ row.id }}">Вопрос №{{ num }}</a></p>
+    {% endfor %}
+    <a href="/polls">К списку опросов</a><br>
+    <a href="/user/{{ person_id }}">Мои опросы</a>
+</body>
+</html>
